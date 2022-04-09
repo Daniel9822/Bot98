@@ -882,13 +882,13 @@ let ingfo = `*G R O U P  I N F O*\n\n*Name :* ${groupName}\n*ID Group :* ${m.cha
 ds = await getBuffer(pic)
 XeonBotInc.sendMessage(m.chat, { image: ds,caption: ingfo, mentions: [groupMetadata.owner] }, { quoted: m})
 break
-            case 'tagall': case 'tag': {
+		case 'tagall': case 'tag': case 'mencionar': {
                 if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
-let teks = `══✪〘 *👥 Tag All* 〙✪══
+let teks = `══✪〘 *👥 LLAMANDO A TODOS* 〙✪══
  
- ➲ *Message : ${q ? q : 'blank'}*\n\n`
+ ➲ *Mensage : ${q ? q : 'blank'}*\n\n`
                 for (let mem of participants) {
                 teks += `⭔ @${mem.id.split('@')[0]}\n`
                 }
@@ -1744,7 +1744,7 @@ message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { uplo
                 XeonBotInc.sendText(m.chat, `⭔ *Hasil :* ${anu.message.result}\n⭔ *Notes :* ${anu.message.catatan}`, m)
             }
             break
-            case 'zodiakjfjdkkd': case 'zodiackckdkdk': {
+            case 'zodiak': case 'zodiackckdkdk': {
                 if (!text) throw `Example : ${prefix+ command} 7 7 2005`
                 let zodiak = [
                     ["capricorn", new Date(1970, 0, 1)],
@@ -1906,7 +1906,7 @@ message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { uplo
                 XeonBotInc.sendMessage(m.chat, { audio: { url: anu.result.audio } }, { quoted: msg })
             }
             break
-	        case 'fbdlkxkxkx': case 'fbkckxkxk': case 'facebookjfkddkk': {
+	        case 'fbd': case 'fb': case 'facebook': {
                 if (!text) throw 'Enter Query Link!'
                 replay(mess.wait)
                 let anu = await fetchJson(api('zenz', '/api/downloader/facebook', { url: text }, 'apikey'))
