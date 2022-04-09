@@ -35,13 +35,13 @@ global.prefa = ['_','$'] //prefix
 global.sp = '⭔' //design
 global.mess = {
     success: 'Done ✓',
-    admin: 'This Feature Is Only For Admin!',
-    botAdmin: 'Bot Must Be Admin First!',
-    owner: 'This Feature Is Only For Owner',
-    group: 'Feature Used Only For Groups!',
-    private: 'Features Used Only For Private Chat!',
+    admin: 'Hey miembro comun, pequeño mortal, devilucho ese comando es solo para adm!',
+    botAdmin: 'El bot tiene que ser admi!',
+    owner: 'Respete los rangos este comando solo lo puede usar el dueño',
+    group: 'Comando admitido solo en grupos!',
+    private: 'Este comando solo se usa en el chat privado!',
     bot: 'This feature in only for the bot number',
-    wait: 'In process...',
+    wait: 'En proceso...',
     endLimit: 'Your Daily Limit Has Expired, The Limit Will Be Reset Every 12 Hours',
 }
 global.limitawal = {
