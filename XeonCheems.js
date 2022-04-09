@@ -2375,8 +2375,8 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
                     }
                     break 
 case 'tes': case 'test': case 'alive': case 'bot': case 'robot': case 'cheems': case 'doge':{
-                anu = `Hi ${pushname}
-Cheems Bot With You Forever!! 🐶🤚`
+                anu = `Hola ${pushname}
+Itachi Bot esta aqui!! 🐶🤚`
 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                     templateMessage: {
                         hydratedTemplate: {
@@ -2428,7 +2428,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./XeonMedia/cheemspic.jpg')},
                             hydratedFooterText: `Hi 🤚 ${pushname}
-How Are You? 😊
+Hola como estas? 😊
 
 
 ❏「 INFO BOT 」
@@ -2442,7 +2442,7 @@ How Are You? 😊
 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
 
 
-Please Select Button Below
+Por favor selecciona el botom de abajo
 `,
                             hydratedButtons: [{
                                 urlButton: {
@@ -2482,7 +2482,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                     title: `Hi ${pushname}`,
                     description: `Please Choose The Menu\n\n`,
                     buttonText: "Menu",
-                    footerText: "_Cheems Bot-MD_",
+                    footerText: "_Itachi Bot-MD_",
                     listType: "SINGLE_SELECT",
                     sections: [{
 								"title": "Group Features",
